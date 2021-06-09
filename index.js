@@ -17,7 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18; 
+if (votingAge === 18) {
+  console.log(true)
+}
 
 
 /*
@@ -31,6 +34,12 @@ Do the following:
    HINT: no function required
 */
 
+let entry = false; 
+let name = 'john'; 
+if (name === 'john') {
+  entry = true; 
+  console.log(entry)
+}
 
 
 
@@ -45,7 +54,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let birthYear = '1999'; 
+parseInt(birthYear); 
+console.log(birthYear);
 
 
 
@@ -58,10 +69,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+    return a * b; 
   }
-
+console.log(multiply(1,2)); 
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,10 +85,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+   return age * 7; 
 }
-
+console.log(dogYears(1)); 
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -112,8 +123,20 @@ function hungryDog(weight, age){
       return weight * 0.05; 
     }else if (age >= 1 && weight >=6 && weight <= 10){
       return weight * 0.04; 
+    }else if (age >= 1 && weight >= 11 && weight <= 15){
+      return weight * 0.03; 
+    }else if (age >= 1 && weight > 15) {
+      return weight * 0.02; 
+    }else if (age < 1 && age >= 0.583) {
+      return weight * 0.04; 
+    }else if (age < 0.583 && age >= 0.333) {
+      return weight * 0.05; 
+    }else if (age < 0.333) {
+      return weight * 0.10; 
+    }else {
+      return 'please try again'; 
     }
-  }
+}
 
 
 
@@ -138,11 +161,7 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
-}
-  
-  
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -155,9 +174,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilometers){
+    return kilometers * 0.6214; 
   }
+
+ 
 
 
 
@@ -169,11 +190,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(centimeter){
+   return centimeter * 0.0328084; 
   }
  
-
+ 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -185,11 +206,13 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
-
-
+function annoyingSong(i){
+  
+  // for (i = 0; i <= 99; i--) {   
+  // console.log(i + "bottles of soda on the wall," + i + "bottles of soda, take one down pass it around" + i -1 + "bottles of soda on the wall"); 
+  // }
+}
+console.log(annoyingSong(98)); 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Grade Calculator
